@@ -1,0 +1,1114 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #Fafafa;
+    color: #636b6f;
+    font: 200 10px 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* tira os contornos dos botões */
+button {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none; /* tira o azuzinho de um link */
+	color: #333;
+	font-weight: bold;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Limitando o .container em 728px */
+@media screen and (min-width: 728px) {
+	.container {
+		width: 728px;
+	}
+}
+
+/* 
+* header 
+*/
+.topnav__usuario {
+  border-radius: 100%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  height: 30px;
+  margin-right: 15px;
+  margin-left: 5px;
+  overflow: hidden;
+  width: 30px;
+}
+
+.topnav__usuario img {
+  width: 100%;
+  height: auto;
+}
+.topnav{
+	backface-visibility: hidden;
+	background-color: white;
+	left: 0;
+	padding: 6px 12px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+}
+
+/* modificando o .container do .topbar */
+.topnav .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* modificando o logo */
+.topnav__logo {
+	display: inline-block;
+	height: 35px;
+}
+.topnav__logo img {
+	height: 100%;
+}
+
+/* modificando icon do .topbar */
+.topnav__icon {
+	font-size: 1.6rem;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .content {
+    width: 100%;
+    padding: 96px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.login-container .content section {
+    float: left;
+    max-width: 380px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.logo {
+    margin-bottom: 20px;
+} 
+
+.links {
+    margin-top: 25px;
+}
+.links > a {
+    color: #ff6006;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.login-container .content form {
+    padding: auto;
+    float: right;
+    max-width: 380px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 5%;
+}
+
+.login-container .content form h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 5px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    background: #ff6006;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    transition: filter 0.2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: brightness(90%);
+}
+
+.links-r {
+    display: none;
+}
+
+@media (max-width: 900px ) {
+    .login-container .content {
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        background: #f0f0f5;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-r {
+        margin-top: 30px;
+        display: -webkit-inline-flex;
+    }
+
+    .links-r > a {
+        color: #ff6006;
+        padding: 0 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .login-container .content section {
+        margin-left: auto;
+        margin-bottom: 0px;
+    }
+
+    .login-container .content form {
+        margin-right: auto;
+        margin-top: 20px;
+        max-width: 300px;
+    }
+}
+.register-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container .content {
+    width: 100%;
+    padding: 96px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.register-container .content section {
+    float: left;
+    max-width: 380px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.spatula {
+    width: 30px;
+    height: 30px;
+}
+
+.register-container .content form {
+    padding: auto;
+    float: right;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 45px;
+    margin-right: 0%;
+}
+
+.register-container .content form h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+.register-container .content form .input-group {
+    display: -webkit-inline-flex;
+    width: 100%;
+    max-width: 400px;
+}
+
+.register-container .content form .input-group input + input {
+    margin-left: 5px;
+}
+
+form textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+    margin-top: 5px;
+}
+
+form select {
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px ) {
+    .register-container .content {
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        background: #f0f0f5;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+}
+.user__image {
+	display: flex;
+	border-radius: 100%;
+    overflow: hidden;
+    float: left;
+}
+.user__image__wrapper {
+	border-radius: 100%;
+	border: 2px solid white;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.user__image img {
+	height: 100%;
+	width: 100%;
+}
+/*.user__image--decoration {
+	background: linear-gradient(45deg, #FF6006 0%, #E73C7E 100%);
+}*/
+.perfil {
+	background-color: white;
+	border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+	display: flex;
+	flex-direction: column;
+    overflow: hidden;
+    padding: 15px;
+    margin-top: 80px;
+}
+.perfil__container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 4px 0;
+}
+
+.perfil__dado {
+    font-size: 2.4rem;
+    margin: 0 8px;
+    float: left;
+}
+
+.perfil__dado:last-of-type {
+	justify-self: flex-end;
+    float: left;
+    justify-items: center;
+    margin-top: 20px;
+    margin-right: 10%;
+}
+.perfil__dado:last-of-type a {
+    display: block;
+    margin-top: 1.3rem;
+}
+
+@media screen and (max-width: 728px) {
+	.perfil__dado:last-of-type {
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.4rem;
+        padding-right: 4.8rem;
+    }
+    .perfil__dado:last-of-type a {
+        margin-top: 10px;
+    }
+}
+
+.perfil .user__image {
+	width: 128px;
+	height: 128px;
+	margin: 0 8px;
+	justify-content: center;
+	align-items: center;
+}
+.perfil .user__image__wrapper {
+	height: 122px;
+	width: 122px;
+}
+
+.perfil__dado p {
+    font-size: 1.4rem;;
+ }
+
+.perfil__dado p1 {
+    margin-top: 25px;
+    font-size: 1.8rem;
+}
+
+.perfil__dado p2 {
+    margin-top: 25px;
+    font-size: 1.6rem;
+}
+
+/* menu */
+.catalogo-menu-lista {
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.catalogo-menu-lista-item {
+	margin: 0 20px;
+}
+
+.catalogo-menu-lista-item button {
+	color: gray;
+	display: inline-block;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.catalogo-menu-lista-item button:hover {
+    box-shadow: inset 0 -1px 0 #FF6006;
+    color: #FF6006;
+}
+/* end menu */
+
+/* Receitas */
+.receitas {
+    margin-top: 15px;
+    padding-top: 20px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+
+.receitas h1 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: grey;
+    text-align: center;
+    width: 100%;
+}
+
+.receitas .new__receita {
+    width: 25%;
+    height: 40px;
+    background: #FF6006;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.receitas .new__receita a {
+    color: white;
+}
+
+.receita {
+    width: 218px;
+    margin-top: 0;
+    margin: 1%;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 728px) {
+    .receita {
+        width: 95%;
+        margin-top: 0;
+        margin: 1%;
+        margin-bottom: 3%;
+    }
+}
+
+.receita__figure img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.receita__figure-user img {
+    width: 100%;
+    border-radius: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.receita__figure:hover, .receita__figure-user:hover {
+    opacity: 0.8;
+}
+
+.receita__body {
+    text-align: center;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.receita__body-idid {
+    text-align: center;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #FF6006, #E73C7E);
+    border-radius: 5px;
+    color: white;
+}
+
+.receita__content h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.receita__content-idid h1 {
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+
+.receita__content h2 {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 100;
+    color: grey;
+}
+
+.receita__content-idid h2 {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 100;
+    color: white;
+}
+
+.receita__footer {
+    margin-top: 15px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    color: grey;
+  }
+
+  .receita__footer-idid {
+    margin-top: 15px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    color: white;
+  }
+.container section {
+    text-align: center;
+}
+
+.editar--perfil, .editar--senha {
+	background-color: white;
+	border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.editar--senha {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    margin-bottom: 32px;
+    font-size: 32px;
+}
+
+.figure__user img {
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 49px;
+}
+
+.editar__container--perfil {
+	margin-right: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2.4rem;
+    padding-right: 4.8rem;
+}
+
+.form__edit--perfil, .form__edit--senha {
+    padding: auto;
+    max-width: 350px;
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0%;
+    float: left;
+}
+
+@media screen and (max-width: 728px) {
+    .figure__user {
+        margin-left: 55px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .editar__container--perfil {
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    .form__edit--perfil {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/* para o input da imagens */
+/*#mediaFile {
+    display: none;
+}*/
+/* Tirando pq o javaScript não funcionou se o javaScript funcionar colocar novamente */
+
+.input-group {
+    display: -webkit-inline-flex;
+    width: 100%;
+    max-width: 350px;
+}
+
+.input-group input + input {
+    margin-left: 5px;
+}
+
+.form__edit--perfil input, .form__edit--senha input {
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 5px;
+}
+
+.form__edit--perfil textarea{
+    width: 100%;
+    resize: vertical;
+    min-height: 100px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+    margin-top: 5px;
+}
+
+.form__edit--perfil .input-group select {
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.form__edit--perfil button, .form__edit--senha button {
+    width: 100%;
+    height: 40px;
+    background: #ff6006;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    transition: filter 0.2s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.cadastro-receita-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+ /* Limitando o .cadastro-receita-container em 728px */
+ @media screen and (max-width: 728px) {
+    .cadastro-receita-container {
+      padding: 16px 0;
+    }
+  }
+
+  .cadastro-receita-content {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .cadastro-receita-content-idid {
+    background: linear-gradient(45deg, #FF6006, #E73C7E);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .cadastro-receita__header, .cadastro-receita__header-idid {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .cadastro-receita__header h1{
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .cadastro-receita__header-idid h1{
+    font-size: 32px;
+    margin-bottom: 0;
+    color: white;
+  }
+
+  .cadastro-receita__header h1 img, .cadastro-receita__header-idid h1 img{
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+  }
+  
+  .cadastro-receita__figure {
+    overflow: hidden;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+  .cadastro-receita__figure img {
+    width: 100%;
+    cursor: pointer;
+  }
+  .cadastro-receita__figure:hover {
+    opacity: 0.8;
+  }
+
+  .cadastro-receita-content form, .cadastro-receita-content-idid form {
+      padding: 16px;
+  }
+
+  .cadastro-receita-content-idid form button img{
+    width: 40px;
+    height: 30px;
+    margin-top: 3px;
+  }
+  
+.pesquisa {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pesquisa form input {
+    width: 80%;
+    height: 30px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 80px;
+    margin-left: 7%;
+}
+
+.pesquisa form button {
+    height: 30px;
+    padding: 0 3%;
+    margin-top: 5px;
+}
+
+.content_pesquisa {
+    padding: 15px;
+}
+
+.content_pesquisa p{
+    color: black;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.content_pesquisa .qtreceitas{
+    margin-top: 20px;
+}
+
+.results__pesquisa {
+	display: block;
+    padding: 15px;
+}
+.results__pesquisa .user, .results__pesquisa .receita  {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.results__pesquisa .user span, .results__pesquisa .receita span  {
+	font-size: 1.3rem;
+}
+.results__pesquisa .user__thumb {
+	height: 30px;
+	width: 30px;
+	margin-right: 8px;
+}
+
+.results__pesquisa .user__thumb img {
+    width: 100%;
+    height: 100%;
+}
+.results__pesquisa .user__name {
+	color: black;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+  .top {
+      padding-top: 60px;
+  }
+  .hello__feed {
+    margin-top: 15px;
+    padding-top: 20px;
+	  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .hello__feed h1 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: grey;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hello__feed .pesquisa__feed {
+    width: 25%;
+    height: 40px;
+    background:#FF6006;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .hello__feed .pesquisa__feed a {
+    color: white;
+  }
+  
+  .feed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  /* Limitando o .feed em 728px */
+  @media screen and (min-width: 728px) {
+    .feed {
+      padding: 16px 0;
+    }
+  }
+  
+  /* Post */
+  .post {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .post__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .post__header img {
+    width: 40px;
+    height: 30px;
+  }
+  
+  .post__header button {
+    cursor: pointer;
+  }
+
+  .post__header .user {
+    display: flex;
+    align-items: center;
+  }
+  .post__header .user__thumb {
+    height: 30px;
+    margin-right: 8px;
+    width: 30px;
+  }
+
+  .post__header .user__thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+
+  .post__header .user__name {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .post__context {
+    font-size: 1.4rem;
+  }
+  .post__figure {
+    overflow: hidden;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+  .post__figure img {
+    width: 100%;
+  }
+  .post__figure:hover {
+    opacity: 0.8;
+  }
+
+  .post-content h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .post-content h2 {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .post-content p {
+    font-size: 12px;
+  }
+  
+  .post-content pre {
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .post-content .modoPreparo {
+    padding: 0 6% 2%;
+  }
+  
+  .post-content p1 {
+    font-size: 13px;
+  }
+
+  .post__controls {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 0;
+  }
+
+  .post__control img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .post__controls button {
+    cursor: pointer;
+  }
+
+  .post__controls span {
+    font-size: 1.4rem;
+    color: gray;
+    margin-right: 10px;
+  }
+
+  .post__controls form {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .post__controls form input {
+    width: 100px;
+    margin-right: 5px;
+    height: 30px;
+  }
+
+  .post__control {
+    font-size: 2.4rem;
+    margin: 0 8px;
+  }
+
+  .post__control:last-of-type {
+    justify-self: flex-end;
+    margin-left: auto;
+  }
+  .post__comentario {
+    display: block;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-y: auto;
+  }
+  /* desaparecer com o scroll dos comentarios */
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+     width: 2px;
+  }
+
+  .post__comentario .coments {
+    display: block;
+    margin: 10px;
+    margin-left: 20px;
+    float: left;
+  }
+  .post__comentario .coments .user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .post__comentario .coments .user__thumb {
+    height: 25px;
+    margin-right: 8px;
+    width: 25px;
+  }
+
+  .post__comentario .coments .user__thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  .post__comentario .coments .conteudo p {
+    margin-left: 10%;
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .comentar {
+    margin: 10px;
+    display: flex;
+    font-size: 12px;
+    color: grey;
+    align-items: center;
+  }
+
+  .comentar .user__thumb {
+    height: 35px;
+    margin-right: 15px;
+    width: 35px;
+    margin-left: 10%;
+    margin-top: 5px;
+  }
+  .comentar .user__thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  .comentar form{
+    width: 90%;
+    display: flex;
+  }
+  .comentar button{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .comentar form textarea {
+    min-height: 25px;
+  }
+
+  

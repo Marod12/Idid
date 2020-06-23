@@ -1,0 +1,263 @@
+  .top {
+      padding-top: 60px;
+  }
+  .hello__feed {
+    margin-top: 15px;
+    padding-top: 20px;
+	  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .hello__feed h1 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: grey;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hello__feed .pesquisa__feed {
+    width: 25%;
+    height: 40px;
+    background:#FF6006;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .hello__feed .pesquisa__feed a {
+    color: white;
+  }
+  
+  .feed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  /* Limitando o .feed em 728px */
+  @media screen and (min-width: 728px) {
+    .feed {
+      padding: 16px 0;
+    }
+  }
+  
+  /* Post */
+  .post {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .post__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+  }
+  .post__header img {
+    width: 40px;
+    height: 30px;
+  }
+  
+  .post__header button {
+    cursor: pointer;
+  }
+
+  .post__header .user {
+    display: flex;
+    align-items: center;
+  }
+  .post__header .user__thumb {
+    height: 30px;
+    margin-right: 8px;
+    width: 30px;
+  }
+
+  .post__header .user__thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+
+  .post__header .user__name {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .post__context {
+    font-size: 1.4rem;
+  }
+  .post__figure {
+    overflow: hidden;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+  .post__figure img {
+    width: 100%;
+  }
+  .post__figure:hover {
+    opacity: 0.8;
+  }
+
+  .post-content h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .post-content h2 {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  
+  .post-content p {
+    font-size: 12px;
+  }
+  
+  .post-content pre {
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .post-content .modoPreparo {
+    padding: 0 6% 2%;
+  }
+  
+  .post-content p1 {
+    font-size: 13px;
+  }
+
+  .post__controls {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 0;
+  }
+
+  .post__control img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .post__controls button {
+    cursor: pointer;
+  }
+
+  .post__controls span {
+    font-size: 1.4rem;
+    color: gray;
+    margin-right: 10px;
+  }
+
+  .post__controls form {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .post__controls form input {
+    width: 100px;
+    margin-right: 5px;
+    height: 30px;
+  }
+
+  .post__control {
+    font-size: 2.4rem;
+    margin: 0 8px;
+  }
+
+  .post__control:last-of-type {
+    justify-self: flex-end;
+    margin-left: auto;
+  }
+  .post__comentario {
+    display: block;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-y: auto;
+  }
+  /* desaparecer com o scroll dos comentarios */
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+     width: 2px;
+  }
+
+  .post__comentario .coments {
+    display: block;
+    margin: 10px;
+    margin-left: 20px;
+    float: left;
+  }
+  .post__comentario .coments .user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .post__comentario .coments .user__thumb {
+    height: 25px;
+    margin-right: 8px;
+    width: 25px;
+  }
+
+  .post__comentario .coments .user__thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  .post__comentario .coments .conteudo p {
+    margin-left: 10%;
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .comentar {
+    margin: 10px;
+    display: flex;
+    font-size: 12px;
+    color: grey;
+    align-items: center;
+  }
+
+  .comentar .user__thumb {
+    height: 35px;
+    margin-right: 15px;
+    width: 35px;
+    margin-left: 10%;
+    margin-top: 5px;
+  }
+  .comentar .user__thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  .comentar form{
+    width: 90%;
+    display: flex;
+  }
+  .comentar button{
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  .comentar form textarea {
+    min-height: 25px;
+  }
+
+  

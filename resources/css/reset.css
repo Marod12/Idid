@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    /*background-color: #f0f0f5;*/
+    /*background-color: #ff6006;*/
+    /*background: linear-gradient(to right, #ff6006 0%, #fd8930 100%); */
+    /*color: #636b6f;*/
+    color:#f0f0f5;
+    font: 200 14px 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+}

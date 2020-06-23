@@ -1,0 +1,248 @@
+.user__image {
+	display: flex;
+	border-radius: 100%;
+    overflow: hidden;
+    float: left;
+}
+.user__image__wrapper {
+	border-radius: 100%;
+	border: 2px solid white;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.user__image img {
+	height: 100%;
+	width: 100%;
+}
+/*.user__image--decoration {
+	background: linear-gradient(45deg, #FF6006 0%, #E73C7E 100%);
+}*/
+.perfil {
+	background-color: white;
+	border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+	display: flex;
+	flex-direction: column;
+    overflow: hidden;
+    padding: 15px;
+    margin-top: 80px;
+}
+.perfil__container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 4px 0;
+}
+
+.perfil__dado {
+    font-size: 2.4rem;
+    margin: 0 8px;
+    float: left;
+}
+
+.perfil__dado:last-of-type {
+	justify-self: flex-end;
+    float: left;
+    justify-items: center;
+    margin-top: 20px;
+    margin-right: 10%;
+}
+.perfil__dado:last-of-type a {
+    display: block;
+    margin-top: 1.3rem;
+}
+
+@media screen and (max-width: 728px) {
+	.perfil__dado:last-of-type {
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2.4rem;
+        padding-right: 4.8rem;
+    }
+    .perfil__dado:last-of-type a {
+        margin-top: 10px;
+    }
+}
+
+.perfil .user__image {
+	width: 128px;
+	height: 128px;
+	margin: 0 8px;
+	justify-content: center;
+	align-items: center;
+}
+.perfil .user__image__wrapper {
+	height: 122px;
+	width: 122px;
+}
+
+.perfil__dado p {
+    font-size: 1.4rem;;
+ }
+
+.perfil__dado p1 {
+    margin-top: 25px;
+    font-size: 1.8rem;
+}
+
+.perfil__dado p2 {
+    margin-top: 25px;
+    font-size: 1.6rem;
+}
+
+/* menu */
+.catalogo-menu-lista {
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.catalogo-menu-lista-item {
+	margin: 0 20px;
+}
+
+.catalogo-menu-lista-item button {
+	color: gray;
+	display: inline-block;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.catalogo-menu-lista-item button:hover {
+    box-shadow: inset 0 -1px 0 #FF6006;
+    color: #FF6006;
+}
+/* end menu */
+
+/* Receitas */
+.receitas {
+    margin-top: 15px;
+    padding-top: 20px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+
+.receitas h1 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: grey;
+    text-align: center;
+    width: 100%;
+}
+
+.receitas .new__receita {
+    width: 25%;
+    height: 40px;
+    background: #FF6006;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.receitas .new__receita a {
+    color: white;
+}
+
+.receita {
+    width: 218px;
+    margin-top: 0;
+    margin: 1%;
+    margin-bottom: 3%;
+}
+
+@media screen and (max-width: 728px) {
+    .receita {
+        width: 95%;
+        margin-top: 0;
+        margin: 1%;
+        margin-bottom: 3%;
+    }
+}
+
+.receita__figure img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.receita__figure-user img {
+    width: 100%;
+    border-radius: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.receita__figure:hover, .receita__figure-user:hover {
+    opacity: 0.8;
+}
+
+.receita__body {
+    text-align: center;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.receita__body-idid {
+    text-align: center;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #FF6006, #E73C7E);
+    border-radius: 5px;
+    color: white;
+}
+
+.receita__content h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.receita__content-idid h1 {
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+
+.receita__content h2 {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 100;
+    color: grey;
+}
+
+.receita__content-idid h2 {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 100;
+    color: white;
+}
+
+.receita__footer {
+    margin-top: 15px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    color: grey;
+  }
+
+  .receita__footer-idid {
+    margin-top: 15px;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    color: white;
+  }

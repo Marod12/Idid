@@ -1,0 +1,65 @@
+.pesquisa {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pesquisa form input {
+    width: 80%;
+    height: 30px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 80px;
+    margin-left: 7%;
+}
+
+.pesquisa form button {
+    height: 30px;
+    padding: 0 3%;
+    margin-top: 5px;
+}
+
+.content_pesquisa {
+    padding: 15px;
+}
+
+.content_pesquisa p{
+    color: black;
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.content_pesquisa .qtreceitas{
+    margin-top: 20px;
+}
+
+.results__pesquisa {
+	display: block;
+    padding: 15px;
+}
+.results__pesquisa .user, .results__pesquisa .receita  {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.results__pesquisa .user span, .results__pesquisa .receita span  {
+	font-size: 1.3rem;
+}
+.results__pesquisa .user__thumb {
+	height: 30px;
+	width: 30px;
+	margin-right: 8px;
+}
+
+.results__pesquisa .user__thumb img {
+    width: 100%;
+    height: 100%;
+}
+.results__pesquisa .user__name {
+	color: black;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+}

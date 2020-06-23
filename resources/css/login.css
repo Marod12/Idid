@@ -1,0 +1,133 @@
+.login-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .content {
+    width: 100%;
+    padding: 96px;
+    background: #f0f0f5;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.login-container .content section {
+    float: left;
+    max-width: 380px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.logo {
+    margin-bottom: 20px;
+} 
+
+.links {
+    margin-top: 25px;
+}
+.links > a {
+    color: #ff6006;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.login-container .content form {
+    padding: auto;
+    float: right;
+    max-width: 380px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 5%;
+}
+
+.login-container .content form h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+    margin-top: 5px;
+}
+
+.button {
+    width: 100%;
+    height: 40px;
+    background: #ff6006;
+    border: 0;
+    border-radius: 8px;
+    color: #FFF;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    transition: filter 0.2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    filter: brightness(90%);
+}
+
+.links-r {
+    display: none;
+}
+
+@media (max-width: 900px ) {
+    .login-container .content {
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        background: #f0f0f5;
+        box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .links-r {
+        margin-top: 30px;
+        display: -webkit-inline-flex;
+    }
+
+    .links-r > a {
+        color: #ff6006;
+        padding: 0 25px;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .login-container .content section {
+        margin-left: auto;
+        margin-bottom: 0px;
+    }
+
+    .login-container .content form {
+        margin-right: auto;
+        margin-top: 20px;
+        max-width: 300px;
+    }
+}

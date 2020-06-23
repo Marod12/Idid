@@ -1,0 +1,79 @@
+.cadastro-receita-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+ /* Limitando o .cadastro-receita-container em 728px */
+ @media screen and (max-width: 728px) {
+    .cadastro-receita-container {
+      padding: 16px 0;
+    }
+  }
+
+  .cadastro-receita-content {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .cadastro-receita-content-idid {
+    background: linear-gradient(45deg, #FF6006, #E73C7E);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .cadastro-receita__header, .cadastro-receita__header-idid {
+    text-align: center;
+    padding: 8px;
+  }
+
+  .cadastro-receita__header h1{
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .cadastro-receita__header-idid h1{
+    font-size: 32px;
+    margin-bottom: 0;
+    color: white;
+  }
+
+  .cadastro-receita__header h1 img, .cadastro-receita__header-idid h1 img{
+    margin-left: 10px;
+    width: 50px;
+    height: 40px;
+  }
+  
+  .cadastro-receita__figure {
+    overflow: hidden;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+  .cadastro-receita__figure img {
+    width: 100%;
+    cursor: pointer;
+  }
+  .cadastro-receita__figure:hover {
+    opacity: 0.8;
+  }
+
+  .cadastro-receita-content form, .cadastro-receita-content-idid form {
+      padding: 16px;
+  }
+
+  .cadastro-receita-content-idid form button img{
+    width: 40px;
+    height: 30px;
+    margin-top: 3px;
+  }
+  
